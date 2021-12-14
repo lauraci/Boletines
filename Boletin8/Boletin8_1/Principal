@@ -1,0 +1,10 @@
+package BoletinesProgramacion.Boletin8.Boletin8_1;
+
+import javax.swing.*;
+import java.util.Scanner;
+
+public class Boletin8_1 {
+    public static void main(String[] args) {
+        Producto casa= new Producto();
+    }
+}
