@@ -1,0 +1,25 @@
+package BoletinesProgramacion.Boletin2.Boletin2_1;
+
+import java.util.Scanner;
+
+public class Boletin2_1 {
+
+    public static void main(String[] args) {
+        int base;
+        int altura;
+        int area;
+
+        //creamos la variable Scanner. Usaremos System.in para indicarle la entrada de datos por teclado
+        Scanner teclado= new Scanner(System.in);
+
+        //le decimos al usuario que introduzca la base
+        System.out.println("Introduzca la base:");
+
+        base= teclado.nextInt();
+
+        //introducir la altura
+        System.out.println("Introduzca la altura:");
+        altura= teclado.nextInt();
+
+        System.out.println("El area del triangulo es:"+base*altura/2);
+    }
