@@ -1,0 +1,17 @@
+package BoletinesProgramacion.Boletin7.Boletin7_1;
+
+import javax.swing.*;
+
+public class Boletin7_1 {
+    public static void main(String[] args) {
+        int num;
+
+        num=Integer.parseInt(JOptionPane.showInputDialog("Introduzca un número positivo"));
+
+        //if simple sin corchetes
+        if (num>0)
+            JOptionPane.showMessageDialog(null, "É positivo");
+
+        //si no es positivo no aparecerá nada
+    }
+}
