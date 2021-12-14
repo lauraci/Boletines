@@ -1,0 +1,37 @@
+package Teoría.EjerciciosBucles.BoletinRepaso;
+
+import java.util.Scanner;
+
+public class Boletin10 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int alumno1=0;
+        int alumno2=0;
+        int alumno3=0;
+        int nota=0;
+
+
+        for (int i = 0; i < 3 ; i++) {
+
+            nota=0;
+           for (int j = 0; j < 6; j++) {
+            System.out.println("Introduce la nota del alumno "+ (i+1)+" en el módulo " + (j+1));
+            nota+= teclado.nextInt();
+           }
+
+           if (i==0){
+               alumno1=nota;
+           }
+           if (i==1){
+               alumno2=nota;
+           }
+           if (i==2){
+               alumno3=nota;
+           }
+        }
+
+        System.out.println("Nota media del alumno 1: " + alumno1/6);
+        System.out.println("Nota media del alumno 2: " + alumno2/6);
+        System.out.println("Nota media del alumno 3: " + alumno3/6);
+    }
+}
