@@ -1,0 +1,29 @@
+package BoletinesProgramacion.Boletin6.Boletin6_1;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner teclado= new Scanner(System.in);
+        Coche cocheVelocidad= new Coche();
+
+        System.out.println("La velocidad del actual del coche es de: " + cocheVelocidad.getVelocidade()+ "Km/h"+ "\n");
+
+        System.out.println("Introduzca una velocidad: ");
+        cocheVelocidad.acelerar(teclado.nextInt());
+
+        System.out.println("La velocidad actual es de :"+ cocheVelocidad.getVelocidade()+ "Km/h"+ "\n");
+
+        System.out.println("Introduzca la velocidad que quiere aumentar: ");
+        cocheVelocidad.acelerar(teclado.nextInt());
+
+        System.out.println("La velocidad actual es de :"+ cocheVelocidad.getVelocidade()+ "Km/h"+ "\n");
+
+        //hacer un  condicional para que no permita salir una velocidad en negativo
+        System.out.println("Introduzca la velocidad que quiera reducir: ");
+        cocheVelocidad.frenar(teclado.nextInt());
+
+        System.out.println("La velocidad actual es de :"+ cocheVelocidad.getVelocidade()+ "Km/h"+ "\n");
+    }
+}
+
