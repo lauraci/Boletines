@@ -1,0 +1,23 @@
+package BoletinesProgramacion.Boletin7.Boletin7_2;
+
+import java.util.Scanner;
+
+public class Boletin7_2 {
+    public static void main(String[] args) {
+        short num1;
+        short num2;
+
+        Scanner teclado=new Scanner(System.in);
+
+        System.out.println("Introduzca el primer número:");
+        num1= teclado.nextShort();
+
+        System.out.println("Introduzca el segundo número:");
+        num2= teclado.nextShort();
+
+        if (num1>=num2) {
+            System.out.println(num1+ " - " +num2 + " = " + (num1-num2));
+        }
+        System.out.println(+num1+ " + " +num2 + " = " +(num1+num2));
+    }
+}
