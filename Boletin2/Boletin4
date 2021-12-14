@@ -1,0 +1,33 @@
+package BoletinesProgramacion.Boletin2.Boletin2_4;
+
+import java.util.Scanner;
+
+public class Boletin2_4 {
+
+    public static void main(String[] args) {
+        //declaramos las variables
+        float num1;
+        float num2;
+
+        Scanner teclado= new Scanner (System.in);
+        System.out.println("Introduzca el primer número: ");
+        num1= teclado.nextFloat();
+
+        System.out.println("Introduzca el segundo número: ");
+        num2= teclado.nextFloat();
+
+        float suma= num1+num2;
+        float resta=num1-num2;
+        float resta2=num2-num1;
+        float producto=num1*num2;
+        float cociente=num1/num2;
+        float cociente2=num2/num1;
+
+        System.out.println("La suma es "+suma);
+        System.out.println("La primera resta es "+ resta + " y la segunda resta es: " + resta2);
+        System.out.println("El producto es "+producto);
+        System.out.println("El primer cociente es "+ cociente + " y el segundo cociente es: " + cociente2);
+
+        //System.out.println("La suma de los dos números es: "+ (num1+num2)); y así con los demás
+    }
+}
