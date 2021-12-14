@@ -1,0 +1,67 @@
+package BoletinesProgramacion.Boletin5;
+
+public class Consumo {
+    private float km;
+    private float litros;
+    private float vMed;
+    private float pGas;
+
+    //Dous constructores , un con parámetros e outro sen eles,
+    // que inicializan os  valores dos atributos
+    public Consumo(){
+        this.km=0;
+        this.litros=0;
+        this.vMed=0;
+        this.pGas=0;
+    }
+
+    public Consumo(float a, float b, float c, float d){
+        this.km= a;
+        this.litros=b;
+        this.vMed=c;
+        this.pGas=d;
+    }
+
+    //metodos
+    //el valor de lo que devuelve no tiene porque ser float, nosotros lo elegimos por PRO
+
+    public float getTempo(){ //Indica el tempo empleado en el viaje
+        return this.km/this.vMed;
+    }
+
+    public float consumoMedio(){ //Consumo medio del vehículo (en litros cada 100 km)
+        return (this.litros/this.km)*100;
+    }
+
+    public float consumoEuros(){
+        //una función puede llamar a otra función
+        return consumoMedio()*pGas;
+    }
+
+    public void setKms (float kms){
+        this.km=kms;
+    }
+
+    public void setLitros(float lit){
+        this.litros=lit;
+    }
+
+    public void setvMed(float velocidad){
+        this.vMed=velocidad;
+    }
+    public void setpGas (float precio){
+        this.pGas=precio;
+    }
+
+    public void getVmed (){
+        System.out.println("Velocidad media de la moto: "+ this.vMed);
+    }
+
+    //este método no parece en el ejercicio.
+    public void mostrarValores (){
+        System.out.println("Kilometros: "+ this.km);
+        System.out.println("Litros: "+ this.litros);
+        System.out.println("vMed: "+ this.vMed);
+        System.out.println("Precio de la gasolina: "+ this.pGas);
+    }
+}
