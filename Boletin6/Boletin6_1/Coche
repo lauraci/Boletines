@@ -1,0 +1,24 @@
+package BoletinesProgramacion.Boletin6.Boletin6_1;
+
+public class Coche {
+    private int velocidade;
+
+    public Coche(){
+        this.velocidade=0;
+    }
+
+    //métodos
+    public int getVelocidade (){ //Este método devolve a velocidade actual
+        return this.velocidade;
+    }
+
+    public void acelerar (int valor){
+        this.velocidade= this.velocidade+valor;
+    }
+
+    public void frenar (int valor){
+        if (valor<=0){
+            this.velocidade= this.velocidade-valor;
+        }
+    }
+}
