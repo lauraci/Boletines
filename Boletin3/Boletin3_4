@@ -1,0 +1,33 @@
+package BoletinesProgramacion.Boletin3.Boletin3_5;
+
+import java.util.Scanner;
+
+public class Boletin3_5 {
+    public static void main(String[] args) {
+        Scanner teclado= new Scanner(System.in);
+
+        float soldoFixo, comision, quilometraxe, dietas, soldoLiquido, soldoBruto, irpf;
+        float retencion_ss=36;
+
+        System.out.println("Introduce soldo fixo: ");
+        soldoFixo= teclado.nextFloat();
+
+        System.out.println("Introduce total de vendas: ");
+        comision= teclado.nextFloat()*5/100;
+
+        System.out.println("Introduce los días de desprazamento: ");
+        dietas=teclado.nextFloat()*30;
+
+        System.out.println("Introduce el kilometraje: ");
+        quilometraxe=teclado.nextFloat()*2;
+
+        soldoBruto=soldoFixo+comision+dietas+quilometraxe;
+
+        irpf=soldoBruto*18/100;
+
+        soldoLiquido=soldoBruto-irpf-retencion_ss;
+
+        System.out.println("El sueldo bruto: "+ soldoBruto);
+        System.out.printf("El sueldo líquido es: %.2f", soldoLiquido);
+    }
+}
