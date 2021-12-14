@@ -1,0 +1,29 @@
+package BoletinesProgramacion.Boletin9.Boletin9_3;
+
+// Implementa un programa que calcule o área dun rectángulo cuxa base e altura pides por teclado .
+// Asegurate que estos valores sexan positivos, para eso valida os datos .
+
+import javax.swing.*;
+
+public class Boletin9_3 {
+    public static void main(String[] args) {
+        double base = 0;
+        double altura = 0;
+
+        do {
+            base = Double.parseDouble(JOptionPane.showInputDialog("Introduce la base"));
+            if (base <= 0) {
+                JOptionPane.showMessageDialog(null, "Base incorrecta.");
+            }
+        } while (base <= 0);
+
+        do {
+            altura = Double.parseDouble(JOptionPane.showInputDialog("Introduce la altura"));
+            if (altura <= 0) {
+                JOptionPane.showMessageDialog(null, "Altura incorrecta.");
+            }
+        } while (altura <= 0);
+
+        JOptionPane.showMessageDialog(null, "El área del rectángulo es: "+ base*altura);
+    }
+}
