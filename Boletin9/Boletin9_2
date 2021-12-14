@@ -1,0 +1,20 @@
+package BoletinesProgramacion.Boletin9.Boletin9_2;
+
+import javax.swing.*;
+
+public class Boletin9_2 {
+    public static void main(String[] args) {
+        int suma=0;
+        double producto=1;
+
+        for (int i = 10; i <= 90; i++) {
+
+            suma=suma+i;
+            //suma+=i;
+            producto=producto*i;
+
+        }
+        JOptionPane.showMessageDialog(null, "La suma de todos los números es: "+ suma+
+                "\n El producto de todos los números es: "+ producto);
+    }
+}
