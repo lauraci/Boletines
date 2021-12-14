@@ -1,0 +1,20 @@
+package BoletinesProgramacion.Boletin3.Boletin3_2;
+
+import java.util.Scanner;
+
+public class Boletin3_2 {
+    public static void main(String[] args) {
+        float centi;
+
+        Scanner teclado= new Scanner (System.in);
+
+        System.out.println("Introduzca los grados centígrados: ");
+        centi= teclado.nextFloat();
+
+        System.out.println(centi+ " centígrados son " + (centi+273) + " grados Kelvin y "
+                + (centi*1.8+32) + "Fahrenheit");
+
+
+        //273 Kelvin. 1,8+32 Fahrenheit
+    }
+}
