@@ -1,0 +1,28 @@
+package BoletinesProgramacion.Boletin6.Boletin6_2;
+
+public class Satelite {
+    private double meridiano;
+    private double paralelo;
+    private double distanciaTerra;
+
+    //constructor sin parámetros
+    public Satelite(){
+        meridiano= 0;
+        paralelo=0;
+        distanciaTerra=0;
+    }
+
+    //constructor con parámetros
+    public Satelite (double m, double p, double d){
+        this.meridiano= m;
+        this.paralelo= p;
+        this.distanciaTerra= d;
+    }
+
+    //métodos
+
+    public void verPosicion (){
+        System.out.println("O satélite atópase no paralelo "+paralelo+", meridiano " +meridiano+ ", a unha distantia da terra " +
+                distanciaTerra);
+    }
+}
