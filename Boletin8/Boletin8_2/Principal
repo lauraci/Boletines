@@ -1,0 +1,9 @@
+package BoletinesProgramacion.Boletin8.Boletin8_2;
+
+public class main {
+    public static void main(String[] args) {
+        Figuras obx= new Figuras();
+
+        obx.pedirFigura();
+    }
+}
