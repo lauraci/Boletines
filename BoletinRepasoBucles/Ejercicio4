@@ -1,0 +1,27 @@
+package Teoría.EjerciciosBucles.BoletinRepaso;
+
+import java.util.Scanner;
+
+public class Boletin4 {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+        int num = 0;
+        int resul=0;
+        int i=0;
+
+        while (i <4) {
+            System.out.println("Introduce número: ");
+            num = teclado.nextInt();
+
+            if (num > 0) {
+                System.out.println("Su número es " + num);
+                resul+=num;
+                i++;
+            }else System.out.println("HIJOPUTA");
+        }
+
+        System.out.println("El total es:" + resul);
+    }
+
+}
