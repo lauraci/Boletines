@@ -1,0 +1,9 @@
+package BoletinesProgramacion.Boletin7.Boletin7_4;
+
+public class Boletin7_4 {
+    public static void main(String[] args) {
+        Persona nome= new Persona();
+
+        nome.pedirPeso();
+    }
+}
