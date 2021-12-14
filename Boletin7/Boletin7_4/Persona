@@ -1,0 +1,53 @@
+package BoletinesProgramacion.Boletin7.Boletin7_4;
+
+//Coñecidos o nome e o peso de dúas persoas, queremos escribir os
+// datos da que pesa máis e, a diferenza de peso entre elas
+
+import javax.swing.*;
+
+public class Persona {
+    private String nome;
+    private float peso;
+
+    //contructores
+
+    public Persona(){
+    }
+
+    public Persona(String nome, float peso){
+        this.nome=nome;
+        this.peso=peso;
+    }
+
+    //métodos de acceso
+
+    public void setNome(String nome){
+        this.nome=nome;
+    }
+
+    public void setPeso(float peso){
+        this.peso=peso;
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
+    public float getPeso(){
+        return this.peso;
+    }
+
+    public void pedirNombre(){
+        setNome(JOptionPane.showInputDialog("Introduce nombre:"));
+    }
+
+    public void pedirPeso(){
+        setPeso(Float.parseFloat(JOptionPane.showInputDialog("Introduce peso:")));
+    }
+
+    public void comparar(Persona a, Persona b){
+        if (a.getPeso()>b.getPeso()){
+
+        }
+
+    }
+}
