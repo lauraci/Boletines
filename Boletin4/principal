@@ -1,0 +1,34 @@
+package BoletinesProgramacion.Boletin4;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+
+        Libro libro1=new Libro();
+        //(String titulo, String autor, int ano, short numPaginas)
+        Libro libro2=new Libro("El cementerio", "Stephen King", 1976, (short)500);
+
+        libro1.amosar();
+        libro2.amosar();
+
+        System.out.println("Introduzca título: ");
+        String titulo= teclado.nextLine();
+        libro1.setTitulo(titulo);
+
+        System.out.println("Introduzca autor: ");
+        libro1.setAutor(teclado.nextLine());
+
+        System.out.println("Introuca año: ");
+        libro1.setAno(teclado.nextInt());
+
+        System.out.println("Introduzca páginas: ");
+        libro1.setnumPaginas(teclado.nextShort());
+
+        System.out.println("Introduzca valoración: ");
+        libro1.setValoracion(teclado.nextFloat());
+
+        libro1.amosar();
+    }
+}
