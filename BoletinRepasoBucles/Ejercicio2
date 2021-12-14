@@ -1,0 +1,20 @@
+package Teoría.EjerciciosBucles.BoletinRepaso;
+
+import java.util.Scanner;
+public class Boletin2 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        int i=0;
+        String num="";
+
+        while (i<5){
+            System.out.println("Introduce número: ");
+            num = num + teclado.next() + " ";
+
+            i++;
+        }
+
+        System.out.println(num);
+    }
+}
