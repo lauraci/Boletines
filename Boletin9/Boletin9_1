@@ -1,0 +1,23 @@
+package BoletinesProgramacion.Boletin9.Boletin9_1;
+
+import javax.swing.*;
+
+public class Boletin9_1 {
+    public static void main(String[] args) {
+        int positivo=0;
+        int negativo=0;
+        int cero=0;
+        int numero=0;
+
+        for (int i = 0; i < 10; i++) {
+            numero= Integer.parseInt(JOptionPane.showInputDialog("Introduzca número"));
+            if (numero<=0){
+                if(numero==0){
+                    negativo++;
+                }else cero++;
+            }else positivo++;
+
+        }JOptionPane.showMessageDialog(null, "Hay "+ positivo+ " números positivos, " +
+                negativo+ " negativo y " + cero+ " con valor 0");
+    }
+}
