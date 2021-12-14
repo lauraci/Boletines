@@ -1,0 +1,23 @@
+package Teoría.EjerciciosBucles.BoletinRepaso;
+
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
+import java.util.Scanner;
+
+public class Boletin3 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int num=0;
+
+        do{
+            System.out.println("Intruduce número: ");
+            num= teclado.nextInt();
+
+            System.out.println("Su número es: "+ num);
+
+        }while (num!=0);
+
+        System.out.println("SE HA ACABAO");
+
+    }
+}
