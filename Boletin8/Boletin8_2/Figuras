@@ -1,0 +1,103 @@
+package BoletinesProgramacion.Boletin8.Boletin8_2;
+
+import javax.swing.*;
+
+public class Figuras {
+
+    //atributos
+
+    private String figura;
+    private double lado;
+    private double base;
+    private double altura;
+    private double radio;
+
+        //constructor
+
+    public Figuras(){
+    }
+
+
+      //métodos de acceso
+
+    public void setFigura(String figura){
+        this.figura=figura;
+    }
+
+    public String getFigura(){
+        return this.figura;
+    }
+
+    public void setLado(double lado){
+        this.lado=lado;
+    }
+
+    public double getLado(){
+        return this.lado;
+    }
+
+    public void setBase(double base){
+        this.base=base;
+    }
+
+    public double getBase(){
+        return this.base;
+    }
+
+    public void setAltura(double altura){
+        this.altura=altura;
+    }
+
+    public double getAltura(){
+        return this.altura;
+    }
+
+    public void setRadio(double radio){
+        this.radio=radio;
+    }
+
+    public double getRadio(){
+        return this.radio;
+    }
+
+    //métodos
+
+    public void areaTriangulo(){
+        double area=(getAltura()*getBase())/2;
+        JOptionPane.showMessageDialog(null,"El area del triángulo es: " + area);
+    }
+
+    public void areaCuadrado(){
+        double area= Math.pow(getLado(), 2);
+        JOptionPane.showMessageDialog(null,"El area del cuadrado es: " + area);
+    }
+
+    public void areaCirculo(){
+        double area= Math.PI * Math.pow(radio,2);
+        JOptionPane.showMessageDialog(null,"El area del círculo es: " + area);
+    }
+
+
+    public void pedirFigura(){
+        int figura=0;
+        figura= Integer.parseInt(JOptionPane.showInputDialog("Elige la figura: /n 1.Triángulo /n 2.Cuadrado /n 3. Círculo"));
+
+        switch (figura){
+            case 1:
+                setBase(Double.parseDouble(JOptionPane.showInputDialog("Introduce base:")));
+                setAltura(Double.parseDouble(JOptionPane.showInputDialog("Introduce altura:")));
+                areaTriangulo();
+                break;
+
+            case 2:
+                setLado(Double.parseDouble(JOptionPane.showInputDialog("Introduce lado: ")));
+                areaCuadrado();
+                break;
+
+            case 3:
+                setRadio(Double.parseDouble(JOptionPane.showInputDialog("Introduce radio: ")));
+                areaCirculo();
+
+        }
+    }
+}
