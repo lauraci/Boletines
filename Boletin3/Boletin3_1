@@ -1,0 +1,24 @@
+package BoletinesProgramacion.Boletin3.Boletin3_1;
+
+import java.util.Scanner;
+
+public class Boletin3_1 {
+    public static void main(String[] args) {
+        float tarifa, pagado, dto, porc;
+
+        Scanner teclado=new Scanner (System.in);
+        System.out.println("Introduzca el precio pagado: ");
+        pagado= teclado.nextFloat();
+
+        System.out.println("Introduzca el precio sin rebajar:");
+        tarifa= teclado.nextFloat();
+
+        dto= tarifa-pagado;
+        //porc= dto*100/tarifa;
+
+        porc= (int)(dto*100/tarifa);
+
+        System.out.println("El producto costaba "+ tarifa + ". He pagado "+ pagado + "€."
+                + " Por lo tanto me han aplicado un descuento del "+ porc + "%");
+    }
+}
