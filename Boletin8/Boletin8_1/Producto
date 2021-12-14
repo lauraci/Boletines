@@ -1,0 +1,71 @@
+package BoletinesProgramacion.Boletin8.Boletin8_1;
+
+import jdk.nashorn.internal.scripts.JO;
+
+import javax.swing.*;
+
+public class Producto {
+
+    private double ventas;
+    private String nombreProducto;
+
+    //constructor
+
+    public Producto(){
+        setNombreProducto(JOptionPane.showInputDialog("Introduzca el nombre del producto: "));
+        setVentas(Double.parseDouble(JOptionPane.showInputDialog("Introduza número de ventas:")));
+
+        if (this.ventas<=100){
+            JOptionPane.showMessageDialog(null, this.nombreProducto+" es de consumo bajo.");
+
+        }else if(this.ventas<=500){
+            JOptionPane.showMessageDialog(null, this.nombreProducto+" es de consumo medio.");
+
+        }else if(this.ventas<=1000){
+            JOptionPane.showMessageDialog(null, this.nombreProducto+" es de consumo alto.");
+        }else{
+            JOptionPane.showMessageDialog(null, this.nombreProducto+" es de primera necesidad.");
+        }
+    }
+
+    public Producto(double ventas, String nomeProducto ){
+        this.ventas=ventas;
+        this.nombreProducto= nomeProducto;
+    }
+
+    //metodos de entrada
+
+    public void setVentas(double ventas){
+        this.ventas=ventas;
+    }
+
+    public double getVentas(){
+        return this.ventas;
+    }
+
+    public void setNombreProducto(String producto){
+        this.nombreProducto= producto;
+    }
+
+    public String getNombreProducto(){
+        return this.nombreProducto;
+    }
+
+    //método que recibe el Producto:
+
+
+
+    public void valores(){
+        if (this.ventas<=100){
+            JOptionPane.showMessageDialog(null, this.nombreProducto+" es de consumo bajo.");
+
+        }else if(this.ventas<=500){
+            JOptionPane.showMessageDialog(null, this.nombreProducto+" es de consumo medio.");
+
+        }else if(this.ventas<=1000){
+            JOptionPane.showMessageDialog(null, this.nombreProducto+" es de consumo alto.");
+        }else{
+            JOptionPane.showMessageDialog(null, this.nombreProducto+" es de primera necesidad.");
+        }
+    }
+}
