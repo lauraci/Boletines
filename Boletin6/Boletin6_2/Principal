@@ -1,0 +1,9 @@
+package BoletinesProgramacion.Boletin6.Boletin6_2;
+
+public class Main {
+    public static void main(String[] args) {
+        //dentro de los paréntensis nosotros le podríamos poner los parámetros
+        Satelite saturno= new Satelite(12,12,12);
+        saturno.verPosicion();
+    }
+}
