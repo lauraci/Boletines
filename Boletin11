@@ -1,0 +1,40 @@
+package BoletinesProgramacion.Boletin11;
+
+import javax.swing.*;
+import java.util.Scanner;
+
+public class Boletin11 {
+
+    public static void main(String[] args) {
+    //declaramos la clase MATH. La multiplicamos por 50 porque es el número que queremos. La clase MATH nos devuelve un valor
+    //tipo double, lo castearemos con int ya que en este ejercicio queremos un número entero.
+
+    int aleatorio= (int)(Math.random()*50+1);
+    int numero=0;
+    int intentos=0;
+    int distancia=0;
+
+        //System.out.println(aleatorio);
+
+        while (aleatorio!=numero){
+        numero= Integer.parseInt(JOptionPane.showInputDialog("Jugador, introduzca su número. Entre 1-50:"));
+        distancia= (int)Math.abs(aleatorio-numero);
+        intentos++;
+
+        if(distancia==0){
+            break;
+        } else if (distancia>20) {
+            JOptionPane.showMessageDialog(null, "Estás muy lejos");
+        }else if (distancia>=10) {
+            JOptionPane.showMessageDialog(null, "Estás lejos");
+        }else if (distancia>5){
+            JOptionPane.showMessageDialog(null, "Estás cerca");
+        }else{
+            JOptionPane.showMessageDialog(null, "Muy cerca");
+        }
+
+    }JOptionPane.showMessageDialog(null, "¡ENHORABUENA! "+ aleatorio+ " ES EL NUMERO CORRECTO. Los has hecho en "+ intentos+ " intentos.");
+
+}
+}
+
