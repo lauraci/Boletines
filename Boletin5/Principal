@@ -1,0 +1,38 @@
+package BoletinesProgramacion.Boletin5;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        Consumo coche=new Consumo(); //Crea un obxecto, de tipo consumo, utilizando o constructor sen parámetros
+
+        System.out.println("Este es el constructor sin parámetros. Añade el valor 50 a los litros: ");
+        //no se declara nada dentro de los parentesis
+        coche.setLitros(teclado.nextFloat());
+
+        //llamada a un método
+        coche.mostrarValores();
+
+        System.out.println("Introduzca 1,57 en el precio de la gasolina: ");
+        coche.setpGas(teclado.nextFloat());
+
+        coche.mostrarValores();
+
+        System.out.println("\n");
+
+        // Crea un obxecto, tipo consumo, utilizando o contructor con todos os parámetros
+        Consumo moto= new Consumo(500,200,90,1.53f);
+
+        //Visualiza, a  través do 2º obxecto, o consumo medio
+        System.out.println("Consumo medio del segundo : "+ moto.consumoMedio());
+
+        //Varia o valor dos litros consumidos do 2º obxecto
+        System.out.println("Introduce litros consumidos al segundo constructor: ");
+        moto.setLitros(teclado.nextFloat());
+
+        //Visualiza a velocidade media do 2º obxecto
+        moto.getVmed();
+    }
+}
