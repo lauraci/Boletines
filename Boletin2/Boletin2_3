@@ -1,0 +1,27 @@
+package BoletinesProgramacion.Boletin2.Boletin2_3;
+
+import java.util.Scanner;
+
+public class Boletin2_3 {
+
+    public static void main(String[] args) {
+        float euros;
+        float euroAdollar;
+
+
+        Scanner teclado= new Scanner(System.in);
+
+        System.out.println("Introduzca euros: ");
+        euros= teclado.nextFloat();
+        //teclado.nextLine();
+
+        System.out.println("Introduzca el valor del dolar:");
+        euroAdollar=teclado.nextFloat();
+
+        //float dollar=euros*euroAdollar;
+
+        //System.out.println(euros+ "equivale a"+ dollar);
+
+        System.out.println("Equivale a " + euros*euroAdollar+ " dolares.");
+    }
+}
